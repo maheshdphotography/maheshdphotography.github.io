@@ -1,0 +1,47 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: page
+---
+
+<section id="photography" class="work section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>photography</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filters col-md-12">
+                    <ul id="filters">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".kids">kids</li>
+                        <li data-filter=".nature">nature</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-inner">
+                <div class="row work-posts grid">                    
+
+                    {% for file in site.static_files %}
+                        {% if file.extname == ".jpg" and file.image == true %}
+                            <div class="col-md-4  nature">                                
+                                <div class="item">
+                                    <img src="{{ file.path }}" class="img-fluid img-responsive rounded" alt="">
+                                    <a href="{{ file.path }}" data-lightbox="roadtrip">
+                                        <div class="portfolio-caption">
+                                            <h4>View</h4>
+                                        </div>
+                                    </a>
+                                </div>                                                                    
+                            </div>                   
+                        {% endif %}    
+                    {% endfor %}
+                                                                                       
+                </div>
+            </div>
+        </div>
+    </section>
