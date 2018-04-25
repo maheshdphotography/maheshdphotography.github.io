@@ -35,25 +35,25 @@ defaults:
       image: true
 
   - scope:
-      path: "assets/images/birthday"
+      path: "assets/images/4_birthday"
     values:
       type: "birthday"
       image: true
 
   - scope:
-      path: "assets/images/events"
+      path: "assets/images/2_events"
     values:
       type: "events"
       image: true
 
   - scope:
-      path: "assets/images/general"
+      path: "assets/images/3_general"
     values:
       type: "general"
       image: true
 
   - scope:
-      path: "assets/images/portraits"
+      path: "assets/images/1_portraits"
     values:
       type: "portraits"
       image: true
