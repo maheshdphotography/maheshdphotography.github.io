@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Mahesh Photography
+title: Mahesh D Photography
+sitename: MaheshDPhotography.com
 email: maheshdphotography@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Professional photographer for all your events
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+fb_username: https://www.facebook.com/maheshdphotography
 
 # Build settings
 markdown: kramdown
@@ -33,7 +33,7 @@ defaults:
       path: "assets/images"
     values:
       image: true
-      
+
   - scope:
       path: "assets/images/birthday"
     values:
