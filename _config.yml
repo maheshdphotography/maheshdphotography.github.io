@@ -33,6 +33,30 @@ defaults:
       path: "assets/images"
     values:
       image: true
+      
+  - scope:
+      path: "assets/images/birthday"
+    values:
+      type: "birthday"
+      image: true
+
+  - scope:
+      path: "assets/images/events"
+    values:
+      type: "events"
+      image: true
+
+  - scope:
+      path: "assets/images/general"
+    values:
+      type: "general"
+      image: true
+
+  - scope:
+      path: "assets/images/portraits"
+    values:
+      type: "portraits"
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

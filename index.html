@@ -18,8 +18,9 @@ layout: page
                 <div class="filters col-md-12">
                     <ul id="filters">
                         <li class="active" data-filter="*">All</li>
-                        <li data-filter=".kids">kids</li>
-                        <li data-filter=".nature">nature</li>
+                        {% for folder in site.data.config.folders %}
+                            <li data-filter=".{{folder}}">{{folder}}</li>
+                        {% endfor%}                        
                     </ul>
                 </div>
             </div>
@@ -28,7 +29,7 @@ layout: page
 
                     {% for file in site.static_files %}
                         {% if file.extname == ".jpg" and file.image == true %}
-                            <div class="col-md-4  nature">                                
+                            <div class="col-md-4  {{file.type}}">                                
                                 <div class="item">
                                     <img src="{{ file.path }}" class="img-fluid img-responsive rounded" alt="">
                                     <a href="{{ file.path }}" data-lightbox="roadtrip">
