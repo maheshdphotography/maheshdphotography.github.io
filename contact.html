@@ -4,18 +4,19 @@ title: Contact
 permalink: /contact
 ---
 
-<section id="contactus" class="work section-padding">
+<section id="contactus" class="section-padding">
 <div class="container">
             
 
         <!-- Contact Form-->
         <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <div class="well well-sm">
+            <div class="">
             <form class="form-horizontal" action="https://formspree.io/maheshdphotography@gmail.com" method="POST">
             <fieldset>
-                <legend class="text-center">Contact us</legend>
-        
+                <div class="contact-title"><label >Contact us</label></div>
+                
+                <div class="contact-area">
                 <!-- Name input-->
                 <div class="form-group">
                     <label class="col-md-3 control-label" for="name">Name</label>
@@ -42,7 +43,7 @@ permalink: /contact
         
                 <input type="hidden" name="_next" value="{{site.url}}{{page.url}}?email_status=true" />
                 <input type="hidden" name="_subject" value="Enquiry for Photography" />
-
+                </div>
                 <!-- Form actions -->
                 <div class="form-group center">
                     <div class="col-md-12 text-center">

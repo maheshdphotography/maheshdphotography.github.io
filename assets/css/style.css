@@ -35,10 +35,11 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 1px;
-    color: #161616;
+    color: #bbbbbb;
     font-family: 'Cousine';
     height: 100%;
     width: 100%;
+    background-color: rgb(16, 16, 16);
 }
 
 html,
@@ -95,7 +96,7 @@ fieldset {
 }
 
 .section-title {
-    color: #333;
+    color: rgb(16, 16, 16);
     padding-top: 30px;
     margin-bottom: 50px;
     text-align: center;
@@ -136,9 +137,9 @@ fieldset {
     height: 40px;
     width: 40px;
     font-size: 30px;
-    color: #fff;
+    color: rgb(16, 16, 16);
     text-align: center;
-    background-color: #333;
+    background-color: rgb(249, 249, 249);
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -258,7 +259,7 @@ fieldset {
 */
 
 .menu-area {
-    background: #333;
+    background: rgb(16, 16, 16);
     position: relative;
     padding: 5px 0px;
     z-index: 999;
@@ -403,22 +404,22 @@ a.about-button {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 500;
-    color: #787980;
+    color: #f4f4f5;
     border: none;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
 }
 
 .work .filters li:hover {
-    color: #fff;
+    color: rgb(16, 16, 16);
     border: none;
-    background-color: #333;
+    background-color: #fff;
 }
 
 .work .filters li.active {
     border: none;
-    color: #fff;
-    background-color: #333;
+    color: rgb(16, 16, 16);
+    background-color: #fff;
 }
 
 .work .item {
@@ -588,7 +589,30 @@ a.read-more {
     border: none;
 }
 
+.contact-area {
+    background-color: rgb(16, 16, 16);
+    color: #fff;    
+}
 
+.contact-text {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    color: #f4f4f5;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #f4f4f5;
+    font-family: "Montserrat", sans-serif;
+    
+}
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -597,7 +621,7 @@ a.read-more {
 */
 
 .footer-area {
-    background: #333;
+    background: rgb(16, 16, 16);
     color: #fff;
     text-align: center;
     padding: 30px 0px;
